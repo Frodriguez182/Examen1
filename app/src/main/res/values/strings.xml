@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Taller2_DistribuidoradeManillas</string>
+    <string name="DistribuidoradeManillas">DistribuidorasdeManillas</string>
+    <string name="Digite_Cantidad_Manillas">Digite_cantidad_Manillas</string>
+    <string name="Escoja_Material">Escoja_Material</string>
+    <string name="Escoja_Dije">Escoja_Dije</string>
+    <string name="Escoja_Tipo_Manilla">Escoja_TIpo_Manilla</string>
+    <string name="Moneda_Mostar">Moneda_Mostrar</string>
+</resources>
