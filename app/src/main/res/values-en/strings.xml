@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Handles distributor</string>
+    <string name="buttonBorrar">Clear</string>
+    <string name="buttonCalcular">Calculate</string>
+    <string name="lblCurrency">Currency view:</string>
+    <string name="lblDije">Select pendant handles:</string>
+    <string name="lblMaterial">Select material handles:</string>
+    <string name="lblQuantity">Write handles quantity:</string>
+    <string name="lblTitle">Handles distributor</string>
+    <string name="lblType">Select handles type:</string>
+    <string name="radioButtonCOP">COP</string>
+    <string name="radioButtonUSD">USD</string>
+    <string name="lblValorFinal">Total cost</string>
+</resources>

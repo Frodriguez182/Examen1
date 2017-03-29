@@ -1,15 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="rodriguez.fernando.com.taller2_distribuidorademanillas.MainActivity">
-
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context="com.fernando.rodriguez.taller2.MainActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -30,20 +24,20 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/DistribuidoradeManillas"
+                android:text="@string/lblTitle"
                 android:id="@+id/lblTitle"
                 android:textAlignment="center"
                 android:textStyle="bold"
                 android:layout_gravity="center_horizontal"
                 android:textSize="20dp"
-                android:textColor="@android:color/background_dark" />
+                android:textColor="@color/background_material_dark" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/Digite_Cantidad_Manillas"
+                android:text="@string/lblQuantity"
                 android:id="@+id/lblQuantity"
-                android:textColor="@android:color/background_dark" />
+                android:textColor="@color/background_material_dark" />
 
             <EditText
                 android:id="@+id/txtQuantity"
@@ -54,9 +48,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/Escoja_Material"
+                android:text="@string/lblMaterial"
                 android:id="@+id/lblMaterial"
-                android:textColor="@android:color/background_dark" />
+                android:textColor="@color/background_material_dark" />
 
             <Spinner
                 android:id="@+id/Material_spinner"
@@ -66,9 +60,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/Escoja_Dije"
+                android:text="@string/lblDije"
                 android:id="@+id/lblDije"
-                android:textColor="@android:color/background_dark" />
+                android:textColor="@color/background_material_dark" />
 
             <Spinner
                 android:id="@+id/Dije_spinner"
@@ -78,9 +72,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/Escoja_Tipo_Manilla"
+                android:text="@string/lblType"
                 android:id="@+id/lblType"
-                android:textColor="@android:color/background_dark" />
+                android:textColor="@color/background_material_dark" />
 
             <Spinner
                 android:id="@+id/Type_spinner"
@@ -90,10 +84,72 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/Moneda_Mostar"
+                android:text="@string/lblCurrency"
                 android:id="@+id/lblAge"
-                android:textColor="@android:color/background_dark" />
+                android:textColor="@color/background_material_dark" />
 
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radioButtonUSD"
+                    android:id="@+id/radioButtonUSD"
+                    android:checked="true"
+                    android:layout_weight="0.50" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radioButtonCOP"
+                    android:id="@+id/radioButtonCOP"
+                    android:checked="false"
+                    android:layout_weight="0.50" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="184dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="end"
+                android:textAlignment="center">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/buttonCalcular"
+                    android:elegantTextHeight="true"
+                    android:textStyle="bold"
+                    android:onClick="ejecutar" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/buttonBorrar"
+                    android:elegantTextHeight="true"
+                    android:textStyle="bold"
+                    android:onClick="limpiar" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lblValorFinal"
+                android:id="@+id/lblValorFinal"
+                android:textAlignment="center"
+                android:textColor="@color/background_material_dark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/txtValorFinal"
+                android:textColor="#009688"
+                android:textStyle="bold"
+                android:textSize="17sp" />
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

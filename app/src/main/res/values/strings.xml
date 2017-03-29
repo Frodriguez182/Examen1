@@ -1,9 +1,36 @@
 <resources>
-    <string name="app_name">Taller2_DistribuidoradeManillas</string>
-    <string name="DistribuidoradeManillas">DistribuidorasdeManillas</string>
-    <string name="Digite_Cantidad_Manillas">Digite_cantidad_Manillas</string>
-    <string name="Escoja_Material">Escoja_Material</string>
-    <string name="Escoja_Dije">Escoja_Dije</string>
-    <string name="Escoja_Tipo_Manilla">Escoja_TIpo_Manilla</string>
-    <string name="Moneda_Mostar">Moneda_Mostrar</string>
+    <string name="app_name">Distribuidora de Manillas</string>
+
+    <string name="lblTitle">Distribuidora de Manillas</string>
+    <string name="lblQuantity">Digite cantidad de manillas</string>
+    <string name="lblMaterial">Escoja el material de las manillas:</string>
+    <string name="lblDije">Escoja el dije de las manillas:</string>
+    <string name="lblType">Escoja el tipo de manilla:</string>
+    <string name="lblCurrency">Moneda a visualizar:</string>
+    <string name="lblValorFinal">Costo total</string>
+
+    <string-array name="material_array">
+        <item>Cuero</item>
+        <item>Cuerda</item>
+    </string-array>
+
+    <string-array name="dije_array">
+        <item>Martillo</item>
+        <item>Ancla</item>
+    </string-array>
+
+    <string-array name="type_array">
+        <item>Oro</item>
+        <item>Oro Rosa</item>
+        <item>Plata</item>
+        <item>Níquel</item>
+    </string-array>
+
+    <string name="radioButtonUSD">USD</string>
+    <string name="radioButtonCOP">COP</string>
+
+    <string name="buttonCalcular">Calcular</string>
+    <string name="buttonBorrar">Borrar</string>
+
+    <string name="action_settings" translatable="false">Settings</string>
 </resources>
